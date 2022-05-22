@@ -1,1 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Varela&display=swap');
 
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Varela', sans-serif;
+}
+
+p{
+    font-family: 'Lora', serif;
+}
+/*Navbar styling*/
+.navbar{
+    display: flex;
+    height: 10vh;
+    background: #120505;
+    position: sticky;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.menu{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.nav-links{
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    width: 200px;
+    transition: all 0.5s ease;
+}
+
+.nav-links:hover{
+    color: #fff;
+    background:linear-gradient(to right, #BF953F, #FCF6BA, #B38728, #FBF5B7, #AA771C);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    transition: all 0.5s ease;
+}
+
+.contact-btn{
+    padding: 0.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-btn{
+    color: #120505;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    border: none;
+    text-decoration: none;
+    border-radius: 5px;
+    background: #120505;
+    background-image: linear-gradient(to left, #ECE9E6 0%, #ffffff, #ECE9E6 100%);
+    transition: all 0.7s ease;
+}
+
+.nav-btn:hover{
+    color: #120505;
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all 0.7s ease;
+}
+
+#logo{
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*Media Query mobile*/
+@media screen and (max-width: 960px) {
+    .nav-container {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        height: 60px;
+        width: 100%;
+    }
+
+    .menu {
+        display: grid;
+        position: fixed;
+        transform: translateY(-200%);
+        transition: transform 0.5s;
+        height: 60vh;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 99;
+        background: black;
+        color: white;
+        list-style: none;
+        padding-top: 4rem;
+      }
+
+    /*Burger menu*/
+
+    .hamburger {
+        position: fixed;
+        z-index: 100;
+        top: 1rem;
+        right: 1rem;
+        padding: 4px;
+        border: #120505 solid 1px;
+        background: #ECE9E6;
+        cursor: pointer;
+      }
+
+      .closeIcon {
+        display: none;
+      }
+
+      .showMenu {
+        transform: translateY(0);
+      }
+
+    .nav-items{
+        width: 100%;
+    }
+
+    .nav-links{
+        text-align: center;
+        padding: 3rem;
+        width: 100%;
+    }
+
+    .contact-btn{
+        padding-bottom: 1rem;
+    }
+
+    .nav-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+/*Media Query Desktop*/
+@media screen and (min-width: 960px) {
+    .hamburger{
+        display: none;
+    }
+}
