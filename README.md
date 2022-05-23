@@ -9,7 +9,6 @@ milestone 2 project
 Patrick Zoet
 
 ## Project Overview
-- pictures will be added here later on
 - The basics of the project idea was from a colleague whom is starting her own make up brand.
 - She wanted a simple website with mainly black and white features and simplicity to showcase some of her products and services in the future.
 
@@ -138,3 +137,29 @@ and with the help of Miss Mun
 - VSC as IDE to watch live changes to ease the workflow (I did not link this to my github yet which I will do for the next project to also commit directly)
 - Balsamic for the wireframes
 - https://uigradients.com/ for gradients 
+
+## Testing
+- Issue with mobile nav bar not closing when event clicked.
+- scrolling to products bit too far down.
+- contact button no function due to time issue
+- box shadow landing bottom not overlapping as intended
+
+### Lighthouse Audits 
+#### Desktop
+![image](https://user-images.githubusercontent.com/63070414/169727212-3e4ae232-954b-476b-ad32-713c6848df34.png)
+
+#### Mobile
+![image](https://user-images.githubusercontent.com/63070414/169727241-7858ed85-4fc6-4910-aef7-d52a52a448b5.png)
+
+main issue loading size img takes too long, imporoved since last project.
+
+
+## Credits
+- Malia for the READ.me template
+- [Dr Mun helped me ](https://www.encodedna.com/javascript/populate-json-data-to-html-table-using-javascript.htm) as help for the json
+- https://uigradients.com used for gradients
+- https://blog.logrocket.com/three-ways-style-css-box-shadow-effects/ starting point for shadow effects
+- https://dev.to/ljcdev/easy-hamburger-menu-with-js-2do0 burger menu
+- https://unsplash.com/ used for images
+
+
