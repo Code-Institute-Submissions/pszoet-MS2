@@ -11,6 +11,7 @@ body{
 p{
     font-family: 'Lora', serif;
 }
+
 /*Navbar styling*/
 .navbar{
     display: flex;
@@ -91,14 +92,14 @@ p{
     border-radius: 5px;
     background: #120505;
     background-image: linear-gradient(to left, #ECE9E6 0%, #ffffff, #ECE9E6 100%);
-    transition: all 0.7s ease;
+    transition: all 1s ease;
 }
 
 .nav-btn:hover{
     color: #120505;
     cursor: pointer;
     transform: scale(1.05);
-    transition: all 0.7s ease;
+    transition: all 1s ease;
 }
 
 #logo{
@@ -145,7 +146,6 @@ p{
     font-size: 3rem;
 }
 
-/*Main Section*/
 /* Main section*/
 .main{
     background-color: #fff;
@@ -179,16 +179,68 @@ p{
 }
 
 .img-card{
-    background-image: url('assets/images/model.jpg');
+    background-image: url(assets/images/model.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     overflow: hidden;
     height: 80vh;
     border-radius: 4px;
-    
 }
 
-/*Media Query mobile*/
+/*Product section*/
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .product-box{
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.4),
+                -30px 0px 40px rgba(0, 0, 0, 0.4);
+  }
+  
+  .product-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 650px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 25%;
+    background-color: #FFF;
+    box-shadow: 5px 3px 5px rgba(0, 0, 0, .2);
+    overflow: hidden;
+  }
+  
+  .product-header{
+    font-size: 2rem;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .prduct-text {
+    font-size: .9rem;
+    color: #888;
+    vertical-align: middle;
+    text-align: center;
+  }
+  
+  .include-list {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 17px;
+    font-size: .85rem;
+    line-height: 1.5;
+  }
+  
+  
+
+
+
+/*MediaQuery*/
+
 @media screen and (max-width: 960px) {
     .nav-container {
         padding: 0;
@@ -274,11 +326,22 @@ p{
     .landing-text{
         font-size: 2rem;
     }
+    /* mobile main */
+    .img-card{
+        display: none;
+    }
+    .content h1{
+        display: none;
+    }
+
+    /* mobile product*/
+    .product-box{
+        margin-left: auto;
+        margin-right: auto;
+        padding-right: 25%;
+    }
 }
 
-
-
-/*Media Query Desktop*/
 @media screen and (min-width: 960px) {
     .hamburger{
         display: none;
@@ -295,5 +358,22 @@ p{
         margin-left: 10%;
         margin-right: 10%;
         
+    }
+
+    .products{
+        height: 90vh;
+        margin-left: 10%;
+        margin-right: 10%;
+        box-shadow: 30px 20px 40px rgba(0, 0, 0, 0.4),
+                    -30px 20px 40px rgba(0, 0, 0, 0.4);
+    }
+
+    .product-card{
+        box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);
+    }
+
+    .product-card:hover{
+        background-color: #ECE9E6;
+        opacity: 0.7;
     }
 }
