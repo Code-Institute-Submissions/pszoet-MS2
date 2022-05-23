@@ -144,6 +144,12 @@ and with the help of Miss Mun
 - contact button no function due to time issue
 - box shadow landing bottom not overlapping as intended
 
+### HTML validator
+![image](https://user-images.githubusercontent.com/63070414/169728893-096e07f5-1b74-408d-9c88-802fc5924657.png)
+### CSS validator
+![image](https://user-images.githubusercontent.com/63070414/169728963-2d2936c9-2f55-407c-a623-02c36dd4afae.png)
+
+
 ### Lighthouse Audits 
 #### Desktop
 ![image](https://user-images.githubusercontent.com/63070414/169727212-3e4ae232-954b-476b-ad32-713c6848df34.png)
